@@ -1,0 +1,221 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: rgba(21, 21, 21, 0.6);
+  background: #F5F5F5;
+}
+
+section {
+  margin-bottom: 115px;
+}
+@media screen and (max-width: 1024px) {
+  section {
+    margin-bottom: 75px;
+  }
+}
+section:last-of-type {
+  margin-bottom: 50px;
+}
+@media screen and (max-width: 1024px) {
+  section:last-of-type {
+    margin-bottom: 40px;
+  }
+}
+
+h2 {
+  position: relative;
+  color: #000000;
+  text-align: center;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 150%;
+  margin-bottom: 65px;
+}
+@media screen and (max-width: 1024px) {
+  h2 {
+    font: 32px;
+    margin-bottom: 48px;
+  }
+}
+h2:before {
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: block;
+  width: 40px;
+  height: 40px;
+  background: rgba(21, 21, 21, 0.1);
+  border-radius: 50%;
+}
+@media screen and (max-width: 1024px) {
+  h2:before {
+    width: 32px;
+    height: 32px;
+  }
+}
+
+h3 {
+  color: #151515;
+}
+
+.wrapper {
+  width: 100%;
+  max-width: 1164px;
+  margin: 0 auto;
+  padding: 0 32px;
+}
+@media screen and (max-width: 1024px) {
+  .wrapper {
+    padding: 0 20px;
+  }
+}
+
+.banner {
+  display: flex;
+  align-items: center;
+  min-height: 100vh;
+  background: url("images/banner-desktop-bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+@media screen and (max-width: 1200px) {
+  .banner {
+    background-image: url("images/banner-mobile-bg.png");
+    background-position: right;
+  }
+}
+.banner__text {
+  max-width: 600px;
+}
+.banner__text h1 {
+  font-size: 66px;
+  line-height: 116%;
+  color: #151515;
+  font-weight: 400;
+  font-family: "Roboto", sans-serif;
+  margin-bottom: 48px;
+}
+@media screen and (max-width: 1024px) {
+  .banner__text h1 {
+    font-size: 48px;
+    margin-bottom: 40px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .banner__text h1 {
+    font: size 40px;
+    margin-bottom: 32px;
+  }
+}
+.banner__text h1 strong {
+  color: #656293;
+  text-transform: uppercase;
+}
+.banner__text a {
+  display: flex;
+  align-items: center;
+  color: #151515;
+  font-weight: 500;
+  text-decoration: none;
+}
+.banner__text a i {
+  margin-left: 8px;
+  transition: 0.3s;
+}
+.banner__text a:hover i {
+  margin-left: 13px;
+}
+
+.purposes {
+  overflow: hidden;
+  padding-bottom: 65px;
+}
+.purposes:title {
+  margin-bottom: 130px;
+}
+.purposes__item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+@media screen and (min-width: 1024px) {
+  .purposes__item {
+    flex-direction: column;
+  }
+}
+.purposes__item:first-of-type {
+  margin-bottom: 80px;
+}
+@media screen and (min-width: 1024px) {
+  .purposes__item:first-of-type {
+    margin-bottom: 180px;
+  }
+  .purposes__item:first-of-type:before {
+    content: "";
+    position: absolute;
+    left: -100vw;
+    top: 50%;
+    transform: translateY(-50%);
+    width: calc(100vw + 240px);
+    height: calc(100% + 130px);
+    background: #E5F4F6;
+    border-radius: 0px 50px 50px 0px;
+    z-index: -1;
+  }
+}
+.purposes__item:last-of-type img {
+  margin-right: 0;
+  order: 2;
+  margin-left: 32px;
+}
+@media screen and (max-width: 1024px) {
+  .purposes__item:last-of-type img {
+    margin-right: 0;
+    order: 0;
+    margin-top: 32px;
+    max-width: 450px;
+    width: auto;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .purposes__item:last-of-type:before {
+    content: "";
+    position: absolute;
+    left: 50vw;
+    top: 50%;
+    transform: translateY(-50%);
+    width: calc(100vw + 200px);
+    height: calc(100% + 130px);
+    background: #E5F4F6;
+    border-radius: 50px 0px 0px 50px;
+    z-index: -1;
+  }
+}
+.purposes__item img {
+  width: 52%;
+  border-radius: 20px;
+  margin-right: 32px;
+}
+@media screen and (max-width: 1024px) {
+  .purposes__item img {
+    margin-right: 0;
+    margin-bottom: 32px;
+    max-width: 450px;
+    width: auto;
+  }
+}
+.purposes__text {
+  flex: 1;
+  max-width: 450px;
+}/*# sourceMappingURL=style.css.map */
